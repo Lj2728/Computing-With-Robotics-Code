@@ -1,0 +1,22 @@
+#include <Servo.h>
+
+Servo servoRight;
+Servo servoLeft;
+void setup() {
+  servoRight.attach(12);
+  servoLeft.attach(13);
+  servoRight.writeMicroseconds(1500);
+  servoLeft.writeMicroseconds(1300);
+  delay(150);
+  servoLeft.detach();
+  delay(3000);
+  servoLeft.attach(13);
+  servoLeft.writeMicroseconds(1300);
+  delay(150);
+  servoLeft.detach();
+  delay(3000);
+  servoLeft.attach(13);
+  servoLeft.writeMicroseconds(1300);  
+  delay(300);
+  servoLeft.detach();
+}}
